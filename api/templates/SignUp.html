@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/SignUp.css') }}" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sign Up</h1>
+            <p>Join us and start your coding journey!</p>
+        </header>
+        <main>
+            <section class="form-section">
+                <form class="signup-form">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" name="full-name" required>
+                    
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="password">Create a Password</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    
+                    <div class="terms-container">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a></label>
+                    </div>
+                    
+                    <button type="submit">Sign Up</button>
+                </form>
+                <p class="login-link">Already have an account? <a href="{{ url_for('login') }}">Log In</a></p>
+            </section>
+        </main>
+        <footer>
+            <!-- Add footer content here -->
+        </footer>
+    </div>
+    
+</body>
+</html>

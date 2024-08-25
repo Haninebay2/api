@@ -1,0 +1,219 @@
+
+body {
+    margin: 0;
+    background-color: #1F1D2B;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+  }
+
+
+
+  .landingpage {
+    margin: 0 auto;
+    padding: 0 80px;
+    position: relative;
+    max-width: 1100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .landingpage::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    left: 60%;
+    top: 138px;
+    filter: blur(90px);
+    background-color: #FB37FF;
+  }
+  .landingpage::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    left: 80%;
+    top: 550px;
+    background-color: #18B2DE;
+    filter: blur(80px);
+  }
+  .landingpage .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .landingpage .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+  .landingpage .auction {
+    margin-top: 100px;
+  }
+  .landingpage .discover {
+    display: flex;
+    flex-direction: column;
+  }
+  .landingpage .footer {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .landingpage .footer2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-top: 1px solid #F2F2F2;
+  }
+  
+  .navbar .hamburgerlogowrap {
+    display: flex;
+    align-items: center;
+  }
+  .navbar .hamburger {
+    display: none;
+    color: #D7D7D7;
+    background-color: #1F1D2B;
+    border: none;
+    margin-right: 10px;
+  }
+  .navbar .createbtn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 126px;
+    height: 45px;
+    color: #BCBCBC;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .navbar .createbtn.sign:hover{
+    border-radius: 10px;
+    background-color: #d7d7d7;
+    color: #1F1D2B;
+
+  }
+  .navbar .createbtn.selectedbtn {
+    border: 1px solid #D7D7D7;
+    border-radius: 10px;
+  }
+  .navbar .createbtn.selectedbtn:hover{
+    background-color: #D7d7d7;
+    color: #1F1D2B;
+  }
+  .navbar .navlogo {
+    height: 100%;
+    background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .navbar .navlink {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #BCBCBC;
+    cursor: pointer;
+  }
+  .navbar .navlink:hover {
+    background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1.5px solid #9B51E0;
+    transform: scale(1.1);
+  }
+
+  .navbar .navlink.selectedlink {
+    background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 1.5px solid #9B51E0;
+  }
+  .navbar .navlink:not(:last-child) {
+    margin-right: 32px;
+  }
+  
+
+
+  .how-it-works-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  .how-it-works-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .how-it-works-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  .how-it-works-header p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #E2E2E2;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .steps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+  }
+  .step-box {
+    background: rgba(255, 255, 255, 0.095);
+    box-shadow: inset 2px -2px 20px rgba(214, 214, 214, 0.17), inset -3px 3px 3px rgba(255, 255, 255, 0.39);
+    backdrop-filter: blur(74px);
+    border-radius: 18px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .step-box i {
+    font-size: 50px;
+    color: #9B51E0;
+    margin-bottom: 20px;
+  }
+  .step-box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  .step-box p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #BCBCBC;
+  }
+  @media (max-width: 768px) {
+    .steps-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .navlinkwrap a{
+    text-decoration: none;
+  }
+
+  .navbar .navlink {
+    color: #BCBCBC; /* Default text color */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  .navbar .navlink:hover, .navbar .navlink:active {
+    color: transparent; /* Hide text color on hover/active */
+    background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* Chrome, Safari */
+    border-bottom: 1.5px solid #9B51E0; /* Underline style */
+  }

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>How AlgoPath Works</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/HowItWorks.css') }}" />
+    <style>
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <div class="landingpage">
+    <div class="navbar">
+        <a class="navlogo">AlgoPath</a>
+        <button class="hamburger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+              <path d="M3 12h18M3 6h18M3 18h18"/>
+            </svg>
+          </button>
+        <div class="navlinkwrap">
+          <a href="{{ url_for('home') }}" class="navlink">Home</a>
+          <a href="{{ url_for('HowItWorks') }}" class="navlink">My Profile</a>
+          <a href="{{ url_for('HowItWorks') }}" class="navlink">Activity</a>
+          <a href="{{ url_for('HowItWorks') }}" class="navlink">How It Works</a>
+        </div>
+        <div class="buttonwrap">
+          <a href="{{ url_for('signup') }}" class="createbtn sign">CREATE ACCOUNT</a>
+                <a href="{{ url_for('login') }}" class="createbtn sign">SIGN IN</a>
+        </div>
+      </div>
+
+    <!-- How It Works Content -->
+    <div class="how-it-works-container">
+      <!-- Header Section -->
+      <div class="how-it-works-header">
+        <h1>How AlgoPath Works</h1>
+        <p>At AlgoPath, we provide a seamless learning experience powered by AI to help you master coding and problem-solving skills. Follow these steps to start your journey.</p>
+      </div>
+
+      <!-- Steps Section -->
+      <div class="steps-container">
+        <!-- Step 1 -->
+        <div class="step-box">
+          <i class="fas fa-user-plus"></i>
+          <h3>Sign Up</h3>
+          <p>Create your account to get started. Signing up allows you to track your progress, save your work, and receive personalized recommendations.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-box">
+          <i class="fas fa-language"></i>
+          <h3>Choose a Language</h3>
+          <p>Select a programming language that you want to master. We offer courses and problem sets for various levels, from beginner to advanced.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-box">
+          <i class="fas fa-book-open"></i>
+          <h3>Learn with AI</h3>
+          <p>Engage with AI-powered roadmap that adapt to your learning pace. Get instant feedback and tips to improve your coding skills efficiently.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-box">
+          <i class="fas fa-code"></i>
+          <h3>Solve Problems</h3>
+          <p>Put your skills to the test by solving a variety of coding challenges. Our platform integrates with LeetCode for comprehensive practice.</p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="step-box">
+          <i class="fas fa-chart-line"></i>
+          <h3>Track Progress</h3>
+          <p>Monitor your progress through detailed analytics. See how you improve over time and stay motivated to reach your coding goals.</p>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="step-box">
+          <i class="fas fa-award"></i>
+          <h3>Earn Rewards</h3>
+          <p>Complete challenges and milestones to earn badges and certificates. Showcase your achievements to potential employers and peers.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
